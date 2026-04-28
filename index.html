@@ -478,6 +478,101 @@ body{
   font-family:'Inter',sans-serif;
 }
 
+/* ============ ROTEIRO TÉCNICO ============ */
+.roteiro-tech-section{
+  background:linear-gradient(180deg,var(--black) 0%,var(--black-2) 100%);
+}
+.roteiro-tech-wrap{
+  margin-top:48px;
+  border:1px solid rgba(107,208,89,0.15);
+  border-radius:8px;
+  overflow:hidden;
+  background:var(--black-2);
+}
+.roteiro-tech-table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:'Inter',sans-serif;
+  font-size:13px;
+  color:var(--gray-3);
+}
+.roteiro-tech-table thead{
+  background:var(--black-3);
+}
+.roteiro-tech-table thead th{
+  font-family:'Bebas Neue',sans-serif;
+  letter-spacing:2.5px;
+  font-size:12px;
+  color:var(--green);
+  font-weight:400;
+  padding:18px 16px;
+  text-align:left;
+  border-bottom:1px solid rgba(107,208,89,0.2);
+  white-space:nowrap;
+}
+.roteiro-tech-table tbody td{
+  padding:16px;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  vertical-align:top;
+  line-height:1.5;
+}
+.roteiro-tech-table tbody tr:hover{
+  background:rgba(107,208,89,0.03);
+}
+.roteiro-tech-table tbody tr:last-child td{
+  border-bottom:none;
+}
+.roteiro-tech-table .col-tempo{
+  font-family:'Bebas Neue',sans-serif;
+  letter-spacing:1.5px;
+  color:var(--green);
+  font-size:14px;
+  white-space:nowrap;
+}
+.roteiro-tech-table .col-cena{
+  color:#fff;
+  font-weight:600;
+  font-size:13px;
+  min-width:160px;
+}
+.roteiro-tech-table .col-cena .cena-num{
+  display:inline-block;
+  font-family:'Bebas Neue',sans-serif;
+  color:var(--green);
+  margin-right:8px;
+  letter-spacing:1.5px;
+}
+.roteiro-tech-table .col-lettering{
+  color:var(--green-light);
+  font-style:italic;
+  min-width:140px;
+}
+.roteiro-tech-table .col-locucao{
+  color:#fff;
+  min-width:200px;
+}
+.roteiro-tech-table .col-local{
+  color:var(--gray-3);
+  font-size:12px;
+  letter-spacing:0.5px;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.roteiro-tech-scroll{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.roteiro-tech-scroll::-webkit-scrollbar{height:8px}
+.roteiro-tech-scroll::-webkit-scrollbar-thumb{
+  background:rgba(107,208,89,0.3);border-radius:4px;
+}
+.roteiro-tech-scroll::-webkit-scrollbar-track{background:var(--black-3)}
+@media (max-width: 900px){
+  .roteiro-tech-table{font-size:12px;min-width:780px}
+  .roteiro-tech-table thead th{padding:14px 12px;font-size:11px}
+  .roteiro-tech-table tbody td{padding:12px}
+}
+
 /* ============ STORYBOARD ============ */
 .storyboard-section{
   background:linear-gradient(180deg,var(--black-2) 0%,var(--black) 100%);
@@ -1017,16 +1112,20 @@ body{
         <p>Se adapta como dá. E segue. Sempre dando o seu melhor. Todos os dias…</p>
       </div>
 
-      <div class="roteiro-block silence">
-        <p>· · · pausa · · ·</p>
-      </div>
-
       <div class="roteiro-block">
         <p>Histórias assim constroem o mundo. Projetam caminhos. Adaptam planos em tempo real. E constroem o futuro.</p>
       </div>
 
       <div class="roteiro-block punchline">
-        <p>A gente chama isso de engenharia.<br>Mas quase nunca chamamos pelo nome certo.</p>
+        <p>A gente chama isso de engenharia.</p>
+      </div>
+
+      <div class="roteiro-block">
+        <p>Mas tem quem faça isso há muito mais tempo…</p>
+      </div>
+
+      <div class="roteiro-block silence">
+        <p>· · · pausa · · ·</p>
       </div>
 
       <div class="roteiro-block reveal">
@@ -1042,11 +1141,185 @@ body{
   </div>
 </section>
 
+<!-- ROTEIRO TÉCNICO -->
+<section class="section roteiro-tech-section" id="roteiro-tecnico">
+  <div class="container">
+    <div class="reveal-on-scroll">
+      <div class="section-eyebrow">07 · Roteiro Técnico · Tabela de Produção</div>
+      <h2 class="section-title">A construção <span class="accent">cena a cena.</span></h2>
+      <p class="section-lead">Decupagem completa do filme: 18 cenas, 1'55 de duração total. Cada linha conecta tempo, ação visual, lettering em tela, locução e locação — o esqueleto técnico que guia a produção.</p>
+    </div>
+
+    <div class="roteiro-tech-wrap reveal-on-scroll">
+      <div class="roteiro-tech-scroll">
+        <table class="roteiro-tech-table">
+          <thead>
+            <tr>
+              <th>Tempo</th>
+              <th>Cena</th>
+              <th>Descrição (visual + movimento)</th>
+              <th>Lettering</th>
+              <th>Locução / Áudio</th>
+              <th>Local</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-tempo">0'00–0'07</td>
+              <td class="col-cena"><span class="cena-num">01</span>O invisível começa</td>
+              <td>CU extremo. Mãe acordando antes do amanhecer. Luz azul suave. Push-in lento.</td>
+              <td class="col-lettering">Todo dia começa antes de começar.</td>
+              <td class="col-locucao">O dia ainda está amanhecendo. Mas pra algumas pessoas, já começou faz tempo.</td>
+              <td class="col-local">Quarto</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'07–0'12</td>
+              <td class="col-cena"><span class="cena-num">02</span>Decisões silenciosas</td>
+              <td>Close nas mãos: café, lanche, agenda no celular. Micro ações.</td>
+              <td class="col-lettering">Decisões que ninguém vê.</td>
+              <td class="col-locucao">"Com decisões que ninguém vê."</td>
+              <td class="col-local">Cozinha</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'12–0'18</td>
+              <td class="col-cena"><span class="cena-num">03</span>Problemas em tempo real</td>
+              <td>Cortes rápidos: criança chama, celular toca, algo dá errado.</td>
+              <td class="col-lettering">Resolver. Agora.</td>
+              <td class="col-locucao">"E problemas que precisam ser resolvidos na hora."</td>
+              <td class="col-local">Casa</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'18–0'25</td>
+              <td class="col-cena"><span class="cena-num">04</span>Sustentar</td>
+              <td>Plano médio. Mãe com múltiplos itens (bolsa, filho, celular).</td>
+              <td class="col-lettering">Manter tudo de pé.</td>
+              <td class="col-locucao">"É preciso manter tudo de pé…"</td>
+              <td class="col-local">Entrada casa</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'25–0'30</td>
+              <td class="col-cena"><span class="cena-num">05</span>Peso</td>
+              <td>Slow motion. Expressão de cansaço e respiro. Luz mais dura.</td>
+              <td class="col-lettering">Mesmo quando o peso aumenta.</td>
+              <td class="col-locucao">"…mesmo quando o peso aumenta."</td>
+              <td class="col-local">Rua</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'30–0'36</td>
+              <td class="col-cena"><span class="cena-num">06</span>Multitarefa</td>
+              <td>Tracking lateral. Caminhando e resolvendo tudo ao mesmo tempo.</td>
+              <td class="col-lettering">Tudo ao mesmo tempo.</td>
+              <td class="col-locucao">"Ela dá conta de tudo ao mesmo tempo."</td>
+              <td class="col-local">Urbano</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'36–0'43</td>
+              <td class="col-cena"><span class="cena-num">07</span>Pressão real</td>
+              <td>Close celular (WhatsApp) ou ela falando. Realismo.</td>
+              <td class="col-lettering">Prazo. Aprovação.</td>
+              <td class="col-locucao">"Qual o prazo? …me manda por email…"</td>
+              <td class="col-local">Trabalho / carro</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'43–0'48</td>
+              <td class="col-cena"><span class="cena-num">08</span>Previsão</td>
+              <td>Olhar atento. Antecipando algo (filho / gesto).</td>
+              <td class="col-lettering">Prevê.</td>
+              <td class="col-locucao">"Prevê o que está por vir."</td>
+              <td class="col-local">Diversos</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'48–0'54</td>
+              <td class="col-cena"><span class="cena-num">09</span>Reprogramação</td>
+              <td>Mudança de rota (GPS / caminho / gesto).</td>
+              <td class="col-lettering">Recalcula.</td>
+              <td class="col-locucao">"Recalcula a rota quantas vezes for preciso."</td>
+              <td class="col-local">Rua / carro</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">0'54–1'00</td>
+              <td class="col-cena"><span class="cena-num">10</span>Adaptação</td>
+              <td>Situação inesperada (chuva, atraso). Improviso.</td>
+              <td class="col-lettering">Se adapta.</td>
+              <td class="col-locucao">"Se adapta como dá."</td>
+              <td class="col-local">Externo</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">1'00–1'05</td>
+              <td class="col-cena"><span class="cena-num">11</span>Continuidade</td>
+              <td>Plano costas. Ela segue, mesmo cansada. Tracking leve.</td>
+              <td class="col-lettering">Segue.</td>
+              <td class="col-locucao">"E segue. Sempre dando o seu melhor."</td>
+              <td class="col-local">Rua</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">1'05–1'12</td>
+              <td class="col-cena"><span class="cena-num">12</span>Ciclo</td>
+              <td>Montagem de dias diferentes. Rotina repetida.</td>
+              <td class="col-lettering">Todos os dias.</td>
+              <td class="col-locucao">"Todos os dias…"</td>
+              <td class="col-local">Vários</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">1'12–1'20</td>
+              <td class="col-cena"><span class="cena-num">13</span>Mundo</td>
+              <td>Corte paralelo com obras, cidade funcionando.</td>
+              <td class="col-lettering">Constroem o mundo.</td>
+              <td class="col-locucao">"Histórias assim constroem o mundo."</td>
+              <td class="col-local">Cidade / obra</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">1'20–1'28</td>
+              <td class="col-cena"><span class="cena-num">14</span>Engenharia</td>
+              <td>Intercala mãe + engenharia real (planejamento, execução).</td>
+              <td class="col-lettering">Projetam. Adaptam. Constroem.</td>
+              <td class="col-locucao">"Projetam caminhos… constroem o futuro."</td>
+              <td class="col-local">Mix</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">1'28–1'34</td>
+              <td class="col-cena"><span class="cena-num">15</span>Definição</td>
+              <td>Tela limpa / pausa dramática.</td>
+              <td class="col-lettering">Engenharia.</td>
+              <td class="col-locucao">"A gente chama isso de engenharia."</td>
+              <td class="col-local">Abstrato</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">1'34–1'40</td>
+              <td class="col-cena"><span class="cena-num">16</span>Virada</td>
+              <td>Close emocional na mãe.</td>
+              <td class="col-lettering">—</td>
+              <td class="col-locucao">"Mas tem quem faça isso há muito mais tempo…"</td>
+              <td class="col-local">Intimista</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">1'40–1'45</td>
+              <td class="col-cena"><span class="cena-num">17</span>Reveal</td>
+              <td>Close forte. Conexão com filho.</td>
+              <td class="col-lettering">Mãe.</td>
+              <td class="col-locucao">"Mãe."</td>
+              <td class="col-local">Intimista</td>
+            </tr>
+            <tr>
+              <td class="col-tempo">1'45–1'55</td>
+              <td class="col-cena"><span class="cena-num">18</span>Assinatura</td>
+              <td>Logo CREA-SP. Fade institucional.</td>
+              <td class="col-lettering">Valorizando quem constrói o futuro. Dentro e fora das obras.</td>
+              <td class="col-locucao">"CREA-SP…"</td>
+              <td class="col-local">Institucional</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- STORYBOARD -->
 <section class="section storyboard-section" id="storyboard">
   <div class="container">
     <div class="reveal-on-scroll">
-      <div class="section-eyebrow">07 · Referência Visual · Storyboard</div>
+      <div class="section-eyebrow">08 · Referência Visual · Storyboard</div>
       <h2 class="section-title">23 frames de <span class="accent">engenharia invisível.</span></h2>
       <p class="section-lead">O storyboard abaixo dá vida ao roteiro: do despertar no escuro à entrega final, cada frame intercala o cotidiano da mãe com a obra de engenharia. Match cuts conectam dois mundos que sempre foram um só.</p>
     </div>
@@ -1060,14 +1333,30 @@ body{
     </div>
 
     <div class="storyboard-grid reveal-on-scroll">
-      <div class="sb-tag"><span class="sb-tag-num">01</span> Mãe acordada no escuro · lista do dia</div>
-      <div class="sb-tag"><span class="sb-tag-num">07</span> Garagem · chega com várias coisas</div>
-      <div class="sb-tag"><span class="sb-tag-num">12</span> Match cut · porta de casa → obra</div>
-      <div class="sb-tag"><span class="sb-tag-num">13</span> Match cut · calçado criança → bota</div>
-      <div class="sb-tag"><span class="sb-tag-num">14</span> Match cut · caderno → planta</div>
-      <div class="sb-tag"><span class="sb-tag-num">19</span> Pausa · respiro · silêncio</div>
-      <div class="sb-tag"><span class="sb-tag-num">22</span> Close · olhar de mãe · forte e presente</div>
-      <div class="sb-tag"><span class="sb-tag-num">23</span> Ela coloca o capacete · vai pro trabalho</div>
+      <div class="sb-tag"><span class="sb-tag-num">01</span> Mãe acordada no escuro · olhando o celular · lista do dia</div>
+      <div class="sb-tag"><span class="sb-tag-num">02</span> Detalhe · ela separa remédio / roupa / lanche · com agilidade</div>
+      <div class="sb-tag"><span class="sb-tag-num">03</span> Ação · criança deitada de lado · ela segura o copo antes de cair</div>
+      <div class="sb-tag"><span class="sb-tag-num">04</span> Close · pano (improviso rápido) · mão firme</div>
+      <div class="sb-tag"><span class="sb-tag-num">05</span> Ação · filho frustrado · ela se abaixa na altura dele · orienta</div>
+      <div class="sb-tag"><span class="sb-tag-num">06</span> Detalhe · ela ajusta mochila pesada nas costas da criança</div>
+      <div class="sb-tag"><span class="sb-tag-num">07</span> Garagem / porta · chega com várias coisas · celular no ombro · falando do trabalho</div>
+      <div class="sb-tag"><span class="sb-tag-num">08</span> Close · olhar atento · antecipando risco no retrovisor · freia com tudo</div>
+      <div class="sb-tag"><span class="sb-tag-num">09</span> Ação · muda rota no meio do caminho · GPS travado · improviso</div>
+      <div class="sb-tag"><span class="sb-tag-num">10</span> Ação · abriu no celular · email recebido · responde enquanto dá atenção ao filho</div>
+      <div class="sb-tag"><span class="sb-tag-num">11</span> Ação · continua firme · mesmo cansada · sem parar · não desanima</div>
+      <div class="sb-tag"><span class="sb-tag-num">12</span> Match cut · mãos mãe folheando · porta de casa → obra (porta de escritório/site)</div>
+      <div class="sb-tag"><span class="sb-tag-num">13</span> Match cut · calçado da criança → bota na obra</div>
+      <div class="sb-tag"><span class="sb-tag-num">14</span> Match cut · feche um caderno de escola → abre uma planta com a equipe</div>
+      <div class="sb-tag"><span class="sb-tag-num">15</span> Intercala · escolhe roupa do filho pensando no clima · reorganiza etapas no projeto</div>
+      <div class="sb-tag"><span class="sb-tag-num">16</span> Intercala · um olhar de incentivo na altura da criança · por um funcionário na obra</div>
+      <div class="sb-tag"><span class="sb-tag-num">17</span> Cena · obra / campo / escritório · mulheres que constroem todos os dias</div>
+      <div class="sb-tag"><span class="sb-tag-num">18</span> Cena · São Paulo em movimento · o impacto do trabalho que transforma vidas</div>
+      <div class="sb-tag"><span class="sb-tag-num">19</span> Pausa · volta totalmente para mãe · silêncio · respiro</div>
+      <div class="sb-tag"><span class="sb-tag-num">20</span> Close · mãe olhando o filho seguir sozinho · entrando na escola</div>
+      <div class="sb-tag"><span class="sb-tag-num">21</span> Respiro · momento de reflexão · o que ela faz, quase nunca é visto</div>
+      <div class="sb-tag"><span class="sb-tag-num">22</span> Close · olhar da mãe · forte e presente</div>
+      <div class="sb-tag"><span class="sb-tag-num">23</span> Ação · ela pega o capacete · coloca na cabeça · vai pra obra (pro trabalho)</div>
+      <div class="sb-tag"><span class="sb-tag-num">LOGO</span> CREA-SP · Valorizando quem constrói o futuro · Dentro e fora das obras</div>
     </div>
   </div>
 </section>
@@ -1076,7 +1365,7 @@ body{
 <section class="section" id="impacto">
   <div class="container">
     <div class="reveal-on-scroll">
-      <div class="section-eyebrow">08 · Impacto Social e Percepção</div>
+      <div class="section-eyebrow">09 · Impacto Social e Percepção</div>
       <h2 class="section-title">Inteligência emocional, <span class="accent">não estereótipos.</span></h2>
     </div>
     <div class="impacto-grid">
@@ -1132,7 +1421,7 @@ body{
 <section class="section resumo" id="resumo">
   <div class="container">
     <div class="reveal-on-scroll">
-      <div class="section-eyebrow" style="justify-content:center">09 · Resumo da Defesa</div>
+      <div class="section-eyebrow" style="justify-content:center">10 · Resumo da Defesa</div>
       <h2 class="resumo-tagline">
         Não é apenas sobre obras.<br>
         É sobre quem <em>sustenta o mundo</em><br>— todos os dias.
